@@ -1,4 +1,4 @@
-package com.hestervending.vendingmachine;
+package src.main.java.com.hestervending.vendingmachine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

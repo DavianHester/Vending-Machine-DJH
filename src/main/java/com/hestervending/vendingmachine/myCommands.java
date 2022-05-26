@@ -28,4 +28,14 @@ public class myCommands {
         people.add(new Person("Maxwell", 85));
         return people;
     }
+  /*  @Override
+	public void run(String... args) throws IOException {
+		// TODO Auto-generated method stub
+		ObjectMapper objectMapper = new ObjectMapper();
+		
+		Item item = objectMapper.readValue(new File("input.json"), Item.class);
+		
+		System.out.println(item);
+		
+	}*/
 }

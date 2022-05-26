@@ -1,10 +1,14 @@
 package com.hestervending.vendingmachine;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
 public class Item {
 
 	public String name;
 	public int amount;
-	public int price;
+	public String price;
 	
 	public String getName() {
 		return name;
@@ -18,10 +22,10 @@ public class Item {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	public int getPrice() {
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 	@Override

@@ -6,9 +6,9 @@ import java.util.Map;
 
 public class Item {
 
-	public String name;
-	public int amount;
-	public String price;
+	private String name;
+	private int amount;
+	private String price;
 	
 	public String getName() {
 		return name;

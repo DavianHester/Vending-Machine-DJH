@@ -3,6 +3,7 @@ package com.hestervending.vendingmachine;
 import org.springframework.shell.standard.ShellMethod;
 
 import java.util.ArrayList;
+import java.util.*;
 
 import org.springframework.shell.standard.ShellComponent;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,6 +12,7 @@ import java.io.IOException;
 
 @ShellComponent
 public class myCommands {
+   
 
     @ShellMethod("Add two integers together.")
     public int add(int a, int b) {
@@ -32,13 +34,19 @@ public class myCommands {
         return people;
     }
     @ShellMethod("Load JSON File")
-	public String loadInput() throws IOException {
+	public JSON loadInput() throws IOException {
 		// TODO Auto-generated method stub
 		ObjectMapper objectMapper = new ObjectMapper();
+        JSON json = objectMapper.readValue(new File("input.json"), JSON.class);
 		
-		Item item = objectMapper.readValue(new File("Simple.json"), Item.class);
+		//Item item = objectMapper.readValue(new File("Simple.json"), Item.class);
 		
-		return item.toString();
+		return json;
 		
 	}
+
+  
+
+ 
+
 }

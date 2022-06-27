@@ -21,5 +21,16 @@ command to load the JSON file.
 load-input ---- this command will load input.JSON
 
 .................................
+First, I wanted to show my ability to utilize
+existing Tools such as Maven. I built a Maven
+application within Git Bash and created Java
+classes and commands to load the JSON file.
 
+While working I focused on committing my code
+to my GitHub repository often to show progress.
+
+Unfortunately, the application to this point is
+only able to load the JSON file but can not yet
+interact to make any decisions.
+..................................
 
